@@ -10,43 +10,45 @@
 
 <body>
 	<div class="container">
-		<div class="content">
-			<div id="poker-table" class="flex">
-				<div id="community-cards" class="flex">
-					<div id="card-1" class="card">
-						<img src="./assets/card-front.png">
-						<div class="card-content">
-							Ipso lorem bvisjadg
+		<div class="content root">
+			<div class="h-full flex justify-content-center align-items-center">
+				<div id="poker-table" class="flex">
+					<div id="community-cards" class="flex">
+						<div id="card-1" class="card" onclick="toggleCard('1')">
+							<img src="./assets/card-front.png">
+							<div class="card-content">
+								Card 1
+							</div>
+						</div>
+						<div id="card-2" class="card" onclick="toggleCard('2')">
+							<img src="./assets/card-front.png">
+							<div class="card-content">
+								Card 2
+							</div>
+						</div>
+						<div id="card-3" class="card" onclick="toggleCard('3')">
+							<img src="./assets/card-front.png">
+							<div class="card-content">
+								Card 3
+							</div>
+						</div>
+						<div id="card-4" class="card" onclick="toggleCard('4')">
+							<img src="./assets/card-front.png">
+							<div class="card-content">
+								Card 4
+							</div>
+						</div>
+						<div id="card-5" class="card" onclick="toggleCard('5')">
+							<img src="./assets/card-front.png">
+							<div class="card-content">
+								Card 5
+							</div>
 						</div>
 					</div>
-					<div id="card-2" class="card">
-						<img src="./assets/card-front.png">
-						<div class="card-content">
-							Ipso lorem bvisjadg
+					<div id="deck" class="flex">
+						<div class="card" onclick="toggleDeck()">
+							<img src="./assets/card-back.png">
 						</div>
-					</div>
-					<div id="card-3" class="card">
-						<img src="./assets/card-front.png">
-						<div class="card-content">
-							Ipso lorem bvisjadg
-						</div>
-					</div>
-					<div id="card-4" class="card in-deck">
-						<img src="./assets/card-front.png">
-						<div class="card-content">
-							Ipso lorem bvisjadg
-						</div>
-					</div>
-					<div id="card-5" class="card in-deck">
-						<img src="./assets/card-front.png">
-						<div class="card-content">
-							Ipso lorem bvisjadg
-						</div>
-					</div>
-				</div>
-				<div id="deck" class="flex">
-					<div class="card">
-						<img src="./assets/card-back.png">
 					</div>
 				</div>
 			</div>

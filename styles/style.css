@@ -1,3 +1,9 @@
+:root {
+	--border-radius: 20px;
+	--background-color: #303030;
+	--other-color: #212121;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +11,7 @@
 body {
 	margin: 0;
 	height: 100%;
-	background-color: #eff3f8;
+	background-color: #303030;
 }
 
 html,
@@ -28,14 +34,28 @@ body {
 	flex: 1 1 auto;
 }
 
+.container .content.root {
+	padding: 0 .5rem;
+}
+
 .card {
 	overflow: hidden;
-	border-radius: 20px;
+	border-radius: var(--border-radius);
 	position: relative;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: ease-out .2s;
+	cursor: pointer;
+	width: 20%;
 }
+
+.card:hover {
+	z-index: 2;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 .card img {
-	width: 200px;
+	width: 100%;
+  object-fit: contain;
 }
 .card .card-content {
 	position: absolute;
@@ -46,8 +66,10 @@ body {
 }
 
 #poker-table {
-	height: 100%;
 	flex-flow: column;
+	background-color: green;
+	padding: 3rem;
+	border-radius: var(--border-radius);
 }
 
 #poker-table,
@@ -63,5 +85,18 @@ body {
 }
 
 .card.in-deck {
-	position: absolute;
+	transform: rotateY(180deg);
 }
+
+.card.in-deck .card-content {
+	display: none;
+
+}
+
+.card.in-deck img {
+	content: url(../assets/card-back.png);
+}
+
+.h-full { height: 100%; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
