@@ -1,17 +1,28 @@
 :root {
-	--border-radius: 20px;
+	--border-radius: 15px;
 	--background-color: #303030;
-	--other-color: #212121;
+	--header-color: #212121;
+	--text-color: #fff;
+	--spacing: 1rem;
+
+	--primary-color: #6495ED;
+	--secondary-color: #000;
+	--accent-color: #000;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+	font-size: 25px;
+}
+
 body {
 	margin: 0;
 	height: 100%;
 	background-color: #303030;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 html,
@@ -23,7 +34,7 @@ body {
 .container {
 	display: flex;
 	flex-flow: column;
-	gap: .5rem;
+	gap: var(--spacing);
 	height: 100%;
 }
 .container .header,
@@ -34,18 +45,32 @@ body {
 	flex: 1 1 auto;
 }
 
+.container .header.root {
+	background-color: var(--header-color);
+	color: var(--text-color);
+	text-align: center;
+	padding: var(--spacing);
+}
 .container .content.root {
-	padding: 0 .5rem;
+	padding: 0 var(--spacing);
+}
+.container .footer.root {
+	background-color: var(--header-color);
+	color: var(--text-color);
+	padding: var(--spacing);
 }
 
 .card {
 	overflow: hidden;
 	border-radius: var(--border-radius);
 	position: relative;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 	transition: ease-out .2s;
 	cursor: pointer;
 	width: 20%;
+	background-image: url(../assets/card-front.png);
+	background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card:hover {
@@ -54,15 +79,36 @@ body {
 }
 
 .card img {
+	height: 100%;
 	width: 100%;
   object-fit: contain;
+	visibility: hidden;
 }
 .card .card-content {
 	position: absolute;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	padding: 2.3rem;
+	padding: 1.5rem;
+}
+
+button {
+	padding: var(--spacing);
+	border-radius: var(--border-radius);
+	border: 1px solid var(--primary-color);
+	background-color: var(--primary-color);
+	cursor: pointer;
+
+}
+
+button:hover {
+
+}
+
+#profile-picture {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
 }
 
 #poker-table {
@@ -73,19 +119,19 @@ body {
 }
 
 #poker-table,
-#community-cards,
-#deck {
+#community-cards {
 	justify-content: center;
 	align-items: center;
 }
 
 .flex {
 	display: flex;
-	gap: .5rem;
+	gap: var(--spacing);
 }
 
 .card.in-deck {
 	transform: rotateY(180deg);
+	background-image: url(../assets/card-back.png);
 }
 
 .card.in-deck .card-content {
@@ -93,10 +139,18 @@ body {
 
 }
 
-.card.in-deck img {
+/* .card.in-deck img {
 	content: url(../assets/card-back.png);
-}
+} */
 
+.flex-1 { flex: 1 1 0%; }
+.flex-column { flex-flow: column; }
 .h-full { height: 100%; }
 .justify-content-center { justify-content: center; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-end { justify-content: end; }
 .align-items-center { align-items: center; }
+.align-items-end { align-items: flex-end; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
