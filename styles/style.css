@@ -109,6 +109,7 @@ button:hover {
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
+	object-fit:  cover;
 }
 
 #poker-table {
