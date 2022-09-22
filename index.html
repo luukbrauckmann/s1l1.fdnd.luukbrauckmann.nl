@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FDND Visitekaartje</title>
+	<title>Luuks Visitekaartje</title>
 	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/variables.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,80 +13,84 @@
 <body>
 	<div class="container">
 		<header class="root">
-			<h1>Luuks Brauckmann</h1>
+			<h1>Luuk Brauckmann</h1>
 		</header>
 		<main class="root">
 			<div class="flex flex-column">
 				<div class="flex justify-content-center">
-					<!-- <div class="flex-1 flex align-items-end card-flip-button">
-						<button onclick="hideCards()">Hide cards</button>
-					</div> -->
 					<img id="profile-picture" src="./assets/profile-picture.png" alt="">
-					<!-- <div class="card-flip-button flex-1 flex justify-content-end align-items-end card-flip-button">
-						<button onclick="showCards()">Show cards</button>
-					</div> -->
 				</div>
 				<div id="poker-table" class="flex">
 					<div id="community-cards" class="flex">
 						<article id="card-1" class="card in-deck" onclick="toggleCard('1')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
-								Card 1
+								<div class="up">
+									<h3>HTML</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
+								<div class="down">
+									<h3>HTML</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
 							</div>
 						</article>
 						<article id="card-2" class="card in-deck" onclick="toggleCard('2')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
-								Card 2
+								<div class="up">
+									<h3>CSS</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
+								<div class="down">
+									<h3>CSS</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
 							</div>
 						</article>
 						<article id="card-3" class="card in-deck" onclick="toggleCard('3')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
-								Card 3
+								<div class="up">
+									<h3>Javascript</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
+								<div class="down">
+									<h3>Javascript</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
 							</div>
 						</article>
 						<article id="card-4" class="card in-deck" onclick="toggleCard('4')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
-								Card 4
+								<div class="up">
+									<h3>Hobby's</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
+								<div class="down">
+									<h3>Hobby's</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
 							</div>
 						</article>
 						<article id="card-5" class="card in-deck" onclick="toggleCard('5')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
-								Card 5
+								<div class="up">
+									<h3>Hoi</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
+								<div class="down">
+									<h3>Hoi</h3>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ex incidunt iure animi neque nemo? Ipsum provident odio quas cupiditate nisi. Modi placeat eum quaerat. Vitae repellendus recusandae sint?</p>
+								</div>
 							</div>
 						</article>
 					</div>
 				</div>
 			</div>
 		</main>
-		<footer class="root">
-			<div class="flex">
-				<div>
-					<ul>
-						<li>Hai</li>
-						<li>Hai</li>
-						<li>Hai</li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li>Hai</li>
-						<li>Hai</li>
-						<li>Hai</li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li>Hai</li>
-						<li>Hai</li>
-						<li>Hai</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
 	</div>
 
 

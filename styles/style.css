@@ -78,7 +78,17 @@ div.container footer.root {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	padding: 1.5rem;
+	padding: 1rem 1.75rem;
+}
+
+.card .card-content .up,
+.card .card-content .down {
+	height: 50%;
+	overflow: hidden;
+}
+
+.card .card-content .down {
+	rotate: 180deg;
 }
 
 button {
@@ -127,7 +137,6 @@ button:hover {
 
 .card.in-deck .card-content {
 	display: none;
-
 }
 
 /* .card.in-deck img {
