@@ -87,6 +87,10 @@ div.container footer.root {
 	overflow: hidden;
 }
 
+.card .card-content p {
+	font-size: .85rem;
+}
+
 .card .card-content .down {
 	rotate: 180deg;
 }
