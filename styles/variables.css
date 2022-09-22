@@ -1,0 +1,17 @@
+:root {
+	--xs: 0;
+	--sm: 576px;
+	--md: 768px;
+	--lg: 992px;
+	--xl: 1200px;
+	--xxl: 1400px;
+	--border-radius: 15px;
+	--background-color: #303030;
+	--header-color: #212121;
+	--text-color: #fff;
+	--spacing: 1rem;
+
+	--primary-color: #6495ED;
+	--secondary-color: #000;
+	--accent-color: #000;
+}

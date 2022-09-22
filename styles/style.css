@@ -1,25 +1,14 @@
-:root {
-	--border-radius: 15px;
-	--background-color: #303030;
-	--header-color: #212121;
-	--text-color: #fff;
-	--spacing: 1rem;
-
-	--primary-color: #6495ED;
-	--secondary-color: #000;
-	--accent-color: #000;
-}
-
 * {
   box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 body {
-	margin: 0;
 	height: 100%;
 	background-color: #303030;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -30,31 +19,31 @@ body {
 	height: 100%;
 }
 
-/* Standaard flex container */
-.container {
+div.container {
 	display: flex;
 	flex-flow: column;
 	gap: var(--spacing);
 	height: 100%;
 }
-.container .header,
-.container .footer {
+div.container > header,
+div.container > footer {
 	flex: 0 1 auto;
+	padding: var(--spacing);
 }
-.container .content {
+div.container > main {
 	flex: 1 1 auto;
 }
 
-.container .header.root {
+div.container header.root {
 	background-color: var(--header-color);
 	color: var(--text-color);
 	text-align: center;
 	padding: var(--spacing);
 }
-.container .content.root {
+div.container main.root {
 	padding: 0 var(--spacing);
 }
-.container .footer.root {
+div.container footer.root {
 	background-color: var(--header-color);
 	color: var(--text-color);
 	padding: var(--spacing);
@@ -67,7 +56,7 @@ body {
 	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 	transition: ease-out .2s;
 	cursor: pointer;
-	width: 20%;
+	width: 100%;
 	background-image: url(../assets/card-front.png);
 	background-size: cover;
   background-repeat: no-repeat;
@@ -115,7 +104,7 @@ button:hover {
 #poker-table {
 	flex-flow: column;
 	background-color: green;
-	padding: 3rem;
+	padding: 2rem;
 	border-radius: var(--border-radius);
 }
 
@@ -123,6 +112,7 @@ button:hover {
 #community-cards {
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .flex {
@@ -155,3 +145,9 @@ button:hover {
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+
+@import './breakpoint-files/sm-screen.css';
+@import './breakpoint-files/md-screen.css';
+@import './breakpoint-files/lg-screen.css';
+@import './breakpoint-files/xl-screen.css';
+@import './breakpoint-files/xxl-screen.css';

@@ -6,62 +6,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FDND Visitekaartje</title>
 	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/variables.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<div class="container">
-		<div class="header root">
-			<h1>Luuks visitekaartje</h1>
-		</div>
-		<div class="content root">
+		<header class="root">
+			<h1>Luuks Brauckmann</h1>
+		</header>
+		<main class="root">
 			<div class="flex flex-column">
-				<div class="flex">
-					<div class="flex-1 flex align-items-end">
+				<div class="flex justify-content-center">
+					<!-- <div class="flex-1 flex align-items-end card-flip-button">
 						<button onclick="hideCards()">Hide cards</button>
-					</div>
+					</div> -->
 					<img id="profile-picture" src="./assets/profile-picture.png" alt="">
-					<div class="flex-1 flex justify-content-end align-items-end">
+					<!-- <div class="card-flip-button flex-1 flex justify-content-end align-items-end card-flip-button">
 						<button onclick="showCards()">Show cards</button>
-					</div>
+					</div> -->
 				</div>
 				<div id="poker-table" class="flex">
 					<div id="community-cards" class="flex">
-						<div id="card-1" class="card in-deck" onclick="toggleCard('1')">
+						<article id="card-1" class="card in-deck" onclick="toggleCard('1')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
 								Card 1
 							</div>
-						</div>
-						<div id="card-2" class="card in-deck" onclick="toggleCard('2')">
+						</article>
+						<article id="card-2" class="card in-deck" onclick="toggleCard('2')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
 								Card 2
 							</div>
-						</div>
-						<div id="card-3" class="card in-deck" onclick="toggleCard('3')">
+						</article>
+						<article id="card-3" class="card in-deck" onclick="toggleCard('3')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
 								Card 3
 							</div>
-						</div>
-						<div id="card-4" class="card in-deck" onclick="toggleCard('4')">
+						</article>
+						<article id="card-4" class="card in-deck" onclick="toggleCard('4')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
 								Card 4
 							</div>
-						</div>
-						<div id="card-5" class="card in-deck" onclick="toggleCard('5')">
+						</article>
+						<article id="card-5" class="card in-deck" onclick="toggleCard('5')">
 							<img src="./assets/card-front.png">
 							<div class="card-content">
 								Card 5
 							</div>
-						</div>
+						</article>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer root">
+		</main>
+		<footer class="root">
 			<div class="flex">
 				<div>
 					<ul>
@@ -85,7 +86,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 
 
