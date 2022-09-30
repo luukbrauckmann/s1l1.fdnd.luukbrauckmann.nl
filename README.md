@@ -1,5 +1,9 @@
 # Visite kaartje van Luuk Brauckmann gemaakt door Luuk Brauckmann
 
+## Handige links
+
+Link naar website: 
+
 ## Versie 1
 
 Versie 1 is de eerste versie van mijn visitekaartje. Ik heb in deze versie gefocused op de techieken en mogelijkheden die ik had met betrekking tot de ruimte, transities & design. Er staat verder nog niet zoveel tekst en uitleg.
