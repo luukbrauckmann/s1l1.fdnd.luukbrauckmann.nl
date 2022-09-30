@@ -10,7 +10,8 @@ Versie 1 is de eerste versie van mijn visitekaartje. Ik heb in deze versie gefoc
 
 ![image](https://user-images.githubusercontent.com/47314813/193280390-ca43f539-7991-4b38-9ddc-db42f40a4ff6.png)
 
-
 ## Versie 2
 
 Dit is mijn definitieve versie. Ik heb in deze versie alles compleet gemaakt. Ruimte goed ingedeeld en tekst en foto toegevoegd.
+
+![image](https://user-images.githubusercontent.com/47314813/193280939-526b2e7f-dfe6-444e-bf81-479dc62bdb5a.png)
